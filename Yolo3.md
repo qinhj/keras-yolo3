@@ -33,4 +33,8 @@ One needs to update it before training or testing.
 3. model_data/*_anchors.txt
 These files are also used to train/test keras yolo3 models.
 One needs to generate it with scripts/kmeans.py .
+
+4. train.txt
+It's fine if a line with no object bbox info.
+(see yolo3/utils.py for more details)
 ```

@@ -12,7 +12,9 @@ args = vars(ap.parse_args())
 ## VOC datasets: year
 year = args["year"]
 sets = [(year, 'train'), (year, 'val')]
-if "2007" == year:
+if "2012" == year:
+    pass
+else:
     sets.append((year, 'test'))
 print("VOC dataset year: %s, sets: %s" % (year, sets))
 
