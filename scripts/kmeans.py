@@ -95,7 +95,15 @@ class YOLO_Kmeans:
 
 
 if __name__ == "__main__":
-    cluster_number = 9
-    filename = "2012_train.txt"
+
+    import argparse
+    ## construct the argument parser and parse the arguments
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-f", "--filename", type=str, default="2012_train.txt", help="train file")
+    ap.add_argument("-c", "--cluster_number", type=int, default=9, help="cluster number")
+    args = vars(ap.parse_args())
+
+    cluster_number = args["cluster_number"]
+    filename = args["filename"]
     kmeans = YOLO_Kmeans(cluster_number, filename)
     kmeans.txt2clusters()
