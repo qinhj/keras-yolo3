@@ -1,10 +1,6 @@
 ## qinhj: VOC dataset
 /VOCdevkit
-/VOC2028
-/*_train.txt
-/*_val.txt
-/*_test.txt
-/train.txt
+/*.txt
 /*.py
 
 *.jpg
