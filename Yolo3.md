@@ -1,6 +1,11 @@
 # Keras Yolo3 Guide #
 Author: qinhongjie@imilab.com  
 
+## Test ##
+```
+$ python yolo_video.py --image -m model_data/voc2028_weights.h5 -c model_data/voc2028_classes.txt -a model_data/voc2028_anchors.txt
+```
+
 ## Tree ##
 ```
 .
