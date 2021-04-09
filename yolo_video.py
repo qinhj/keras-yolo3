@@ -6,6 +6,8 @@ from PIL import Image
 def detect_img(yolo):
     while True:
         img = input('Input image filename:')
+        if "exit" == img:
+            break
         try:
             image = Image.open(img)
         except:
