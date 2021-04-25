@@ -42,4 +42,11 @@ One needs to generate it with scripts/kmeans.py .
 4. train.txt
 It's fine if a line with no object bbox info.
 (see yolo3/utils.py for more details)
+
+5. why is 255 in the last conv before yolo layer?
+255 = 3 * (80 + 4 + 1), where:
+3:  proposal bbox numbers for each grid
+80: total classes for dataset
+4:  bbox(x, y, w, h)
+1:  confidence score for bbox
 ```
